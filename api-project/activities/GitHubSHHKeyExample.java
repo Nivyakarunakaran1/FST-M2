@@ -24,7 +24,7 @@ public class GitHubSHHKeyExample {
     String shhkey;
     private int keyiD;
 
-    String tokenGenerated = "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";
+    String tokenGenerated = "ghp_X9Mj0kzUByjqCwShCJt";
 
     @BeforeClass
     public void setUp() {
@@ -66,7 +66,7 @@ public class GitHubSHHKeyExample {
         String reqBody = "\n" +
                 "{\n" +
                 "    \"title\": \"TestAPIKey\",\n" +
-                "    \"key\": \"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMJQFquAxfgQnvzKx+/++FgEaH/1PYoLsjS5mf5hQK9L\"\n" +
+                "    \"key\": \"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAA\"\n" +
                 "}\n" +
                 "\n";
         Response response = given().spec(requestSpec1).auth().oauth2(tokenGenerated) // Use requestSpec
